@@ -37,9 +37,6 @@ const Vegetable = db.define('vegetable', {
     },
     planted_on: {
         type: Sequelize.DATEONLY,
-        get() {
-            return moment(this.getDataValue('planted_on')).format('YYYY/MM/DD');
-        },
         allowNull: false,
     },
 });
