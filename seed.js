@@ -1,4 +1,4 @@
-const { db } = require('./models');
+const { db, Gardener, Plot, Vegetable } = require('./models');
 
 db.sync({ force: true })
     .then(() => {
