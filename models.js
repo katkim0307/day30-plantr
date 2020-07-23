@@ -1,8 +1,5 @@
 const Sequelize = require('sequelize');
-const db = new Sequelize('plantr', 'postgres', 'jh810506', {
-    dialect: 'postgres',
-    logging: false,
-});
+const db = new Sequelize('postgres://localhost:5432/plantr');
 
 const Gardener = db.define('gardener', {
     name: {
